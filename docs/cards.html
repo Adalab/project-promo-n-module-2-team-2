@@ -41,7 +41,9 @@
             <h1 class="main__cards--section__title1 js_name_cards">
               Nombre Apellido
             </h1>
-            <h2 class="main__cards--section__title2 js_job">Front-end developer</h2>
+            <h2 class="main__cards--section__title2 js_job">
+              Front-end developer
+            </h2>
           </div>
 
           <img
@@ -122,7 +124,6 @@
                 <div class="colorTwo palette"></div>
                 <div class="colorThree palette"></div>
               </li>
-
             </ul>
           </fieldset>
           <fieldset class="form__section">
@@ -131,7 +132,6 @@
               <h2 class="title">Rellena</h2>
               <i class="fas fa-chevron-down arrow"></i>
             </div>
-
             <label for="name" class="label">Nombre completo</label>
             <input
               type="text"
@@ -148,13 +148,30 @@
               id="work"
               class="input js_input_job"
             />
-            <label for="image" class="label">Imagen de perfil</label>
-            <button class="image__button">Añadir imagen</button>
-            <div class="preload_image"></div>
-            <!-- <p>Imagen de perfil</p>
-            <label for="image" class="label label_button">Añadir imagen </label>
-            <input type="file" class="image__button" />
-            <div class="preload_image"></div> -->
+
+            <!--Acción para añadir imagen de previsualización -->
+            <div class="action">
+              <label class="action__upload-btn" for="img-selector"
+                >Get IMAGE</label
+              >
+              <input
+                type="file"
+                name=""
+                id="img-selector"
+                class="action__hiddenField js__profile-upload-btn"
+              />
+            </div>
+            <div class="profile">
+              <div
+                class="profile__image js__profile-image"
+                style="
+                  background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
+                "
+              ></div>
+              <div class="profile__preview js__profile-preview"></div>
+            </div>
+            
+            <!--Acción para añadir email-->
             <label for="email" class="label">Email</label>
             <input
               type="email"
@@ -201,7 +218,6 @@
           </fieldset>
         </form>
       </section>
-
     </main>
     <footer class="footer">
       <p class="footer__copyright">JavaS the hutt &copy; 2021</p>
